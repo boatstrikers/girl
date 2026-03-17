@@ -1,0 +1,99 @@
+/* --- 基本設定 --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: sans-serif;
+    background-color: #ffffff;
+    color: #333;
+}
+
+/* --- トップバナー --- */
+.top-banner {
+    background-color: #E2218B; /* 画像に近い濃いピンク */
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+.top-banner h2 { margin-bottom: 5px; font-size: 24px;}
+.top-banner p { font-size: 12px; }
+
+/* --- メニュー --- */
+.main-menu {
+    background-color: #F7F7F7; /* 薄いグレー */
+}
+.main-menu ul {
+    display: flex; /* 横並びにする設定 */
+    list-style: none;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+.main-menu li {
+    text-align: center;
+    font-size: 11px;
+    font-weight: bold;
+    padding-bottom: 10px;
+    color: #333;
+    width: 20%;
+    cursor: pointer;
+}
+/* 選ばれているメニューの下線 */
+.main-menu li.active {
+    border-bottom: 3px solid #E2218B;
+}
+.main-menu .icon {
+    font-size: 20px;
+    color: #E2218B;
+}
+
+/* --- カレンダー --- */
+.content {
+    padding: 15px;
+}
+.calendar-header {
+    text-align: center;
+    margin-bottom: 15px;
+}
+.date-select, .btn-show {
+    padding: 5px 15px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    font-size: 16px;
+    color: #E2218B;
+    background: white;
+    font-weight: bold;
+}
+
+/* カレンダーの表 */
+.calendar-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 12px;
+}
+.calendar-table th, .calendar-table td {
+    border: 1px solid #ddd;
+    padding: 5px 2px;
+    height: 60px;
+    vertical-align: top; /* 文字を上に寄せる */
+}
+.calendar-table th {
+    height: auto;
+    color: #888;
+    padding: 10px 0;
+}
+
+/* レース場のバッジ（ピンク・黄色） */
+.badge {
+    display: inline-block;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-size: 10px;
+    color: white;
+    margin-top: 5px;
+    width: 100%;
+}
+.badge.pink { background-color: #FF87B5; }
+.badge.yellow { background-color: #F4BA1E; }
